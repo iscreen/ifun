@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ifund-web"
+    }
+  },
+  "defaultProject": "ifund-web",
+  "cli": {
+    "analytics": false
+  }
 }
