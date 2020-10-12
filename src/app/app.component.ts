@@ -34,37 +34,43 @@ export class AppComponent {
 
   menu = [
     {
+      level: 1,
       title: '我的面板',
       icon: 'user',
       children: [
         {
+          level: 2,
           title: '个人中心',
           routerLink: '/account/center'
         },
         {
+          level: 2,
           title: '个人设置',
           routerLink: '/account/setting'
         }
       ]
     },
     {
+      level: 1,
       title: '系统设置',
       icon: 'setting',
       children: [
-        { title: '角色管理', routerLink: '/system/role' },
-        { title: '用户管理', routerLink: '/system/user' }
+        { level: 2, title: '角色管理', routerLink: '/system/role' },
+        { level: 2, title: '用户管理', routerLink: '/system/user' }
       ]
     },
     {
+      level: 1,
       title: '异常页面',
       icon: 'warning',
       children: [
-        { title: '403', routerLink: '/exception/403' },
-        { title: '404', routerLink: '/exception/404' },
-        { title: '500', routerLink: '/exception/500' }
+        { level: 2, title: '403', routerLink: '/exception/403' },
+        { level: 2, title: '404', routerLink: '/exception/404' },
+        { level: 2, title: '500', routerLink: '/exception/500' }
       ]
     },
     {
+      level: 1,
       title: '使用帮助',
       icon: 'question-circle',
       routerLink: '/page/help'
